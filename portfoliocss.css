@@ -1,0 +1,327 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:rgb(50, 50, 50);
+}
+
+.background-image{
+    position: absolute;
+}
+
+#image1{
+    display: flex;
+    position: relative;
+    width: 100%;
+    filter: brightness(80%);
+    z-index: -1;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+nav{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    transition: 0.3s ease-in;
+    
+}
+nav a:hover{
+    background-color: rgb(220,220,220,0.3);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+nav a{
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color:white;
+    display: flex;
+    margin-bottom: 18px;
+    text-align: center;
+    margin-top: 18px;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.intro1{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    color: white;
+}
+.intro{
+    display: flex;
+    position: absolute;
+    color: white;
+    bottom: 65%;
+    left: 60%;
+}
+.introo{
+    display: flex;
+    position: absolute;
+    color: white;
+    bottom: 50%;
+    left: 60%;
+}
+
+.intro{
+    margin-top: 8em;
+    font-family:monospace,sans;
+    font-size: 40px;
+}
+.introo{
+    font-weight: 800;
+    font-size:50px;
+}
+.intro1{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+nav.scroll {
+    background-color:rgb(0,0,0);
+    color: #eef;
+    z-index: 1;
+    transition: 0.3s ease-out;
+  }
+#image2{
+    display: flex;
+    position: relative;
+    width: 25%;
+    z-index: -1;
+    margin-top: 500px;
+    margin-left: 300px;
+}
+.about{
+    display: flex;
+    position:absolute;
+    left: 38em;
+    top: 20em;
+    font-family:'Courier New', Courier, monospace;
+    font-size:x-large;
+    color: white;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+.aboutme{
+    display:flex ;
+    position:absolute;
+    left: 57em;
+    top: 35em;
+    color: white;
+    font-weight: 100;
+    overflow: hidden;
+}
+#hirebtn{
+    display: flex;
+    position: absolute;
+    left: 57em;
+    top: 48em;
+    padding: 9px;
+    width: 110px;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 15px;
+    border-style: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(75, 210, 75);
+    transition: 0.3s ease-in-out;
+}
+#send:hover,#resumebtn:hover,#hirebtn:hover{
+    background-color: black !important;
+    transition: 0.3s ease-in-out;
+}
+
+#resumebtn{
+    display: flex;
+    position: absolute;
+    left: 70em;
+    top: 48em;
+    padding: 9px;
+    text-decoration: none;
+    width: 150px;
+    justify-content: center;
+    border-radius: 15px;
+    border-style: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(75, 210, 75);
+    transition: 0.3s ease-in-out;
+}
+#res{
+    display: flex;
+    position:absolute;
+    left: 22em;
+    top: 55em;
+    color: white !important;
+    font-weight: 400;
+    
+}
+.respic{
+    width: 250px;
+    position: absolute;
+    display: block;
+    left: 42%;
+    margin-top: 25em;
+}
+#git{
+    display: block;
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    top: 55em;
+    left: 26%;
+}
+.gitpic{
+    width: 250px;
+    position: absolute;
+    display: block;
+    left: 21%;
+    margin-top: 25em;
+}
+.link{
+    display: block;
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    top: 55em;
+    left: 67%;
+}
+.linkpic{
+    width: 250px;
+    position: absolute;
+    display: block;
+    left: 63%;
+    margin-top: 25em;
+}
+#touch{
+    display: flex;
+    color: white !important;
+    font-weight: 400;
+    justify-content: center;
+    font-size:x-large;
+    margin-top: 37em;
+}
+#name,#email,#phone,#message{
+    padding: 10px;
+    position: relative;
+    width: 40%;
+    left: 30%;
+    text-indent: 10px;
+    margin-bottom: 15px;
+    border-style: none;
+    background-color: rgb(220,220,220,0.3);
+}
+::placeholder{
+    color: white;
+}
+#send{
+    position:relative;
+    right: 157px;
+    top: 30px;
+    width: 10%;
+    padding: 15px;
+    border-radius: 50px;
+    border-style: none !important;
+    color: white;
+    background-color: rgb(75, 210, 75);
+    transition: 0.3s ease-in-out;
+    margin-bottom: 50px;
+}
+textarea:focus,input:focus{
+    color: white;
+    transition: 0.3s;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* For screens up to 768px width (mobile devices) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust font size for mobile */
+    }
+
+    .background-image, #image1, #image2 {
+        width: 100%; /* Make images and background image responsive */
+        height: auto;
+        margin: 0; /* Reset margin for images */
+    }
+
+    #image2 {
+        margin-top: 100px; /* Adjust margin for image2 on mobile */
+        margin-left: 0; /* Reset margin left for image2 on mobile */
+    }
+
+    nav {
+        background-color: rgb(0, 0, 0); /* Adjust background color of navbar */
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center;
+        padding-top: 10px; /* Add some space at the top of navbar */
+    }
+
+    nav a {
+        padding: 8px 15px; /* Adjust padding for mobile */
+        margin: 5px 0; /* Adjust margin for mobile */
+    }
+
+    .intro {
+        font-size: 30px; /* Adjust font size for mobile */
+        margin-top: 6em; /* Adjust margin top for mobile */
+    }
+
+    .introo {
+        font-size: 40px; /* Adjust font size for mobile */
+    }
+
+    .intro1 {
+        font-size: 10px; /* Adjust font size for mobile */
+    }
+
+    .about {
+        left: 0; /* Center about text on mobile */
+        top: 40em; /* Adjust position for mobile */
+        font-size: large; /* Adjust font size for mobile */
+    }
+
+    .aboutme {
+        left: 0; /* Center about me text on mobile */
+        top: 60em; /* Adjust position for mobile */
+    }
+
+    #hirebtn, #resumebtn {
+        left: 0; /* Center buttons on mobile */
+        top: 72em; /* Adjust position for mobile */
+        width: auto; /* Allow buttons to adjust width */
+    }
+
+    #res, #git, .link, #touch {
+        text-align: center; /* Center headings on mobile */
+    }
+
+    .respic, .gitpic, .linkpic {
+        left: 50%; /* Center images on mobile */
+        transform: translateX(-50%);
+        margin-top: 1em; /* Adjust margin for mobile */
+    }
+
+    #name, #email, #phone, #message {
+        width: 80%; /* Adjust input and textarea width for mobile */
+    }
+
+    #send {
+        right: auto; /* Reset position for mobile */
+        top: 20px; /* Adjust position for mobile */
+        width: 60%; /* Adjust button width for mobile */
+    }
+}
